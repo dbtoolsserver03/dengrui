@@ -1,0 +1,102 @@
+3.变量和常量
+-- 未经授权禁止转载 --
+什么是变量?
+      定义
+
+               变量(Variable) 是用于存储数据的名称(标识符), 变量可以是任何类型, 如 "数值、字符串" 等
+
+       举例
+
+               字符串
+
+                       姓名: 邓瑞
+
+                       网址: dengruicode.com
+
+               整数 - 支付宝余额: 100元 0元 -100元
+
+               浮点数 - 体重: 70.5公斤
+
+
+
+               注
+
+                       整数: 没有小数部分的数字, 包括 负数、零、正数
+
+       代码
+
+               //字符串类型 string
+
+               let name = "邓瑞" //let 用于声明一个名为 "name" 的块级作用域变量, 并将其赋值为 "邓瑞"
+
+               console.log("姓名:", name) //console.log() 用于打印输出信息到控制台窗口
+
+               console.log("姓名类型:", typeof name) //typeof 数据类型
+
+
+
+               //数值类型 number
+
+               let balance = 100 //使用 number类型 表示整数
+
+               console.log("余额:", balance)
+
+               console.log("余额类型:", typeof balance)
+
+
+
+               let weight = 70.5
+
+               console.log("体重:", weight)
+
+               console.log("体重类型:", typeof weight)
+
+
+
+               //let weight = 60 //错误示范 在同一个作用域下不可以声明两个相同名称的变量
+
+
+
+               //先声明后赋值
+
+               let web
+
+               web = "dengruicode.com"
+
+               console.log("web:", web)
+
+
+
+               注
+
+                       ES6不区分整型和浮点型, 所有数字都使用 number类型 来表示
+
+
+
+什么是常量?
+       定义
+
+               常量(Constant) 是一个固定的值, 在程序运行中常量的值保持不变
+
+       举例
+
+               常量通常用来表示不会改变的值, 如数学中的 π(圆周率) PI≈3.14159265359
+
+       代码
+
+       const PI = 3.14 //const 用于声明一个名为 "PI" 的块级作用域常量, 并将其赋值为 3.14
+
+       console.log("PI", PI)
+
+
+
+变量和常量有什么区别？
+       let age = 18
+
+       age = 22 //变量可以重新赋值
+
+       console.log("age:", age)
+
+
+
+       //PI = 3.1415926 //错误示范
