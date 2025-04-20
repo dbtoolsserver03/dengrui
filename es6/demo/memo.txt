@@ -1,0 +1,2 @@
+curl -I https://example.com
+curl -I https://item.rakuten.co.jp/kagu350/g99030-03/
